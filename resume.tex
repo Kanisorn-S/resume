@@ -1,0 +1,204 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Kanisorn Sangchai} \\ \vspace{1pt} 
+    82/138 Passorn Bangna-Wongwaen Sukhaphiban 2 Rd. Soi 27, Racha Thewa, Bang Phi, Samut Prakan, 10540 \\ \vspace{1pt}
+    \small 089-773-0129 $|$ \href{mailto:6538020621@student.chula.ac.th}{\underline{6538020621@student.chula.ac.th}} $|$ 
+    \href{https://www.linkedin.com/in/kanisorn-sangchai-a38634198/}{\underline{LinkedIn}} $|$
+    \href{https://github.com/Kanisorn-S}{\underline{GitHub}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Chulalongkorn University {\normalfont Bangkok, Thailand}}{Expected Graduation: May 2026}
+      {Bachelor of Engineering in Robotics and Artificial Intelligence}{GPA: {\normalfont 4.00/4.00}}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Software Engineer Intern (AI Adoption)}{May 2025 -- July 2025}
+      {The Siam Cement PCL. (SCG) -- Corporate Innovation Office}{Bangkok, Thailand}
+      \resumeItemListStart
+        \resumeItem{Developed proof-of-concept (POC) systems exploring the application of AI and automation in real-world business workflows.}
+        \resumeItem{Research Paper Data Extraction: Designed an AI-powered pipeline using Gumloop to automatically extract structured data (tables, graphs, images, text) from scientific literature, improving efficiency in R\&D knowledge discovery.}
+        \resumeItem{Accounting Workflow Transformation: Prototyped a multi-agent system with Retrieval-Augmented Generation (RAG) using n8n to automate accounting document verification, producing step-by-step guidelines with confidence scoring.}
+        \resumeItem{Improved AI system accuracy and cost efficiency by refining prompts, adding contextual inputs, and selectively using lightweight vs. advanced LLMs.}
+        \resumeItem{Strengthened professional skills in AI systems development, workflow design, time management, critical analysis, and cross-team communication}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+  %  \resumeSubSubheading
+  %   {Software Engineer I}{Oct 2014 - Sep 2016}
+  %   \resumeItemListStart
+  %      \resumeItem{Apache Beam}
+  %        {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+  %   \resumeItemListEnd
+%-------------------------------------------
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeSubheading
+        {Neuro-Symbolic Robotic Arm Assistant (Ongoing)}{August 2025 -- Present}
+        {ROS~2, Python, Langchain, Ollama, Large Language Models, Gazebo}{\href{www.google.com}{\underline{Demonstration Video}}}
+        \resumeItemListStart
+          \resumeItem{Designed and implemented the high-level planning and decision-making module for an autonomous robotic assistant using Large Language Model (LLM) agents.}
+          \resumeItem{Built LangChain-based AI agents with access to structured tools that wrap ROS~2 services and actions, enabling the LLM to invoke robot capabilities programmatically.}
+          \resumeItem{Abstracted robot functionalities (navigation, manipulation, perception queries) into callable tools, enforcing safe and interpretable action execution.}
+          \resumeItem{Integrated cloud-based LLM APIs and local inference via Ollama, allowing flexible deployment with trade-offs between latency, privacy, and cost.}
+          \resumeItem{Developed and validated the planning pipeline in Gazebo simulation, enabling rapid iteration and safe testing of multi-step task execution.}
+          \resumeItem{Transferred the validated planning system from simulation to real hardware by integrating the official ROS~2 driver for a Universal Robots (UR) arm.}
+  \resumeItemListEnd
+
+      \resumeSubheading
+        {Hybrid Nut Sorting System {\normalfont (published in \href{https://ieeexplore.ieee.org/document/10962883}{\underline{ICMCR 2025}})}}{October 2024 -- November 2024}
+        {OpenCV, PyTorch, Scikit-learn, Tkinter, Raspberry Pi Pico, MicroPython}{\href{www.google.com}{\underline{Demonstration Video}}}
+        \resumeItemListStart
+          \resumeItem{Developed a system combining machine vision, machine learning, and a CoreXY robot to classify and sort nuts by size and type.}
+          \resumeItem{Used OpenCV for feature extraction (contours, bounding boxes) and implemented machine learning models (Neural Network, SVM, KNN, Naive Bayes, Random Forest) with PyTorch and Scikit-learn for nut classification.}
+          \resumeItem{Mapped camera coordinates to projector coordinates using a linear regression model, enabling real-time projection of color-coded circles over detected nuts for human-assisted sorting.}
+          \resumeItem{Designed a GUI with Tkinter, projected onto the workspace for augmented visual feedback.}
+          \resumeItem{Controlled the CoreXY robot with a Raspberry Pi Pico running MicroPython to sweep nuts into organized piles based on type, guided by a pathfinding algorithm.}
+          \resumeItem{Achieved high classification accuracy (up to 98\%) and efficient sorting, demonstrating the effectiveness of integrating computer vision, machine learning, and robotics for automated sorting tasks.}
+          \resumeItem{Presented the project at ICMCR 2025, showcasing the innovative approach to nut sorting using hybrid technologies.}
+      \resumeItemListEnd
+      
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, Python, C/C++, SQL (Postgres), JavaScript, HTML/CSS, R} \\
+     \textbf{Frameworks}{: React, Node.js, Flask, JUnit, WordPress, Material-UI, FastAPI} \\
+     \textbf{Developer Tools}{: Git, Docker, TravisCI, Google Cloud Platform, VS Code, Visual Studio, PyCharm, IntelliJ, Eclipse} \\
+     \textbf{Libraries}{: pandas, NumPy, Matplotlib}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
