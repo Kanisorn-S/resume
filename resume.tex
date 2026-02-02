@@ -1,8 +1,6 @@
 %-------------------------
 % Resume in Latex
-% Author : Jake Gutierrez
-% Based off of: https://github.com/sb2nov/resume
-% License : MIT
+% Tailored for Management Training Programs
 %------------------------
 
 \documentclass[letterpaper,11pt]{article}
@@ -20,26 +18,12 @@
 \usepackage{tabularx}
 \input{glyphtounicode}
 
-
-%----------FONT OPTIONS----------
-% sans-serif
-% \usepackage[sfdefault]{FiraSans}
-% \usepackage[sfdefault]{roboto}
-% \usepackage[sfdefault]{noto-sans}
-% \usepackage[default]{sourcesanspro}
-
-% serif
-% \usepackage{CormorantGaramond}
-% \usepackage{charter}
-
-
 \pagestyle{fancy}
-\fancyhf{} % clear all header and footer fields
+\fancyhf{}
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
-% Adjust margins
 \addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1in}
@@ -47,17 +31,14 @@
 \addtolength{\textheight}{1.0in}
 
 \urlstyle{same}
-
 \raggedbottom
 \raggedright
 \setlength{\tabcolsep}{0in}
 
-% Sections formatting
 \titleformat{\section}{
   \vspace{-4pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
-% Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
 
 %-------------------------
@@ -76,40 +57,13 @@
     \end{tabular*}\vspace{-7pt}
 }
 
-\newcommand{\resumeSubSubheading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-7pt}
-}
-
-\newcommand{\resumeProjectHeading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & #2 \\
-    \end{tabular*}\vspace{-7pt}
-}
-
-\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
-
-\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
-
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 %-------------------------------------------
-%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
 \begin{document}
-
-%----------HEADING----------
-% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
-%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
-% \end{tabular*}
 
 \begin{center}
     \textbf{\Huge \scshape Kanisorn Sangchai} \\ \vspace{1pt} 
@@ -118,7 +72,6 @@
     \href{https://www.linkedin.com/in/kanisorn-sangchai-a38634198/}{\underline{LinkedIn}} $|$
     \href{https://github.com/Kanisorn-S}{\underline{GitHub}}
 \end{center}
-
 
 %-----------EDUCATION-----------
 \section{Education}
@@ -129,73 +82,58 @@
   \resumeSubHeadingListEnd
 
 %-----------EXPERIENCE-----------
-\section{Experience}
+\section{Professional Experience}
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {Software Engineer Intern (AI Adoption)}{May 2025 -- July 2025}
+      {Management-Oriented Software Engineer Intern (AI Adoption)}{May 2025 -- July 2025}
       {The Siam Cement PCL. (SCG) -- Corporate Innovation Office}{Bangkok, Thailand}
       \resumeItemListStart
-        \resumeItem{Developed proof-of-concept (POC) systems exploring the application of AI and automation in real-world business workflows.}
-        \resumeItem{Research Paper Data Extraction: Designed an AI-powered pipeline using Gumloop to automatically extract structured data (tables, graphs, images, text) from scientific literature, improving efficiency in R\&D knowledge discovery.}
-        \resumeItem{Accounting Workflow Transformation: Prototyped a multi-agent system with Retrieval-Augmented Generation (RAG) using n8n to automate accounting document verification, producing step-by-step guidelines with confidence scoring.}
-        \resumeItem{Improved AI system accuracy and cost efficiency by refining prompts, adding contextual inputs, and selectively using lightweight vs. advanced LLMs.}
-        \resumeItem{Strengthened professional skills in AI systems development, workflow design, time management, critical analysis, and cross-team communication}
+        \resumeItem{Led the development of proof-of-concept initiatives to evaluate the business feasibility of AI-driven automation across multiple corporate functions.}
+        \resumeItem{Collaborated with R\&D and business stakeholders to identify pain points in knowledge management, translating them into scalable AI solutions.}
+        \resumeItem{Designed an automated research data extraction workflow that improved information accessibility and decision-making efficiency for innovation teams.}
+        \resumeItem{Prototyped an AI-assisted accounting verification process, focusing on operational accuracy, transparency, and process standardization.}
+        \resumeItem{Evaluated trade-offs between cost, accuracy, and speed in AI system design to support data-driven managerial decisions.}
+        \resumeItem{Strengthened leadership competencies through cross-functional communication, prioritization of deliverables, and ownership of end-to-end project outcomes.}
       \resumeItemListEnd
-      
-% -----------Multiple Positions Heading-----------
-  %  \resumeSubSubheading
-  %   {Software Engineer I}{Oct 2014 - Sep 2016}
-  %   \resumeItemListStart
-  %      \resumeItem{Apache Beam}
-  %        {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
-  %   \resumeItemListEnd
-%-------------------------------------------
 
   \resumeSubHeadingListEnd
 
-
 %-----------PROJECTS-----------
-\section{Projects}
+\section{Leadership \& Project Experience}
     \resumeSubHeadingListStart
+
       \resumeSubheading
-        {Neuro-Symbolic AI Agent for Embodied Task Planning {\normalfont(Ongoing)}}{August 2025 -- Present}
-        {Python, LangChain, Large Language Models, Ollama, ROS~2, Gazebo}{\href{https://drive.google.com/file/d/1draHgIV_FaXqrEH4p6pD_vMLNN0HLVL3/view?usp=sharing}{\underline{Demonstration Video}}}
+        {Neuro-Symbolic AI Planning System {\normalfont (Ongoing)}}{August 2025 -- Present}
+        {Team-Based Research Project}{}
         \resumeItemListStart
-          \resumeItem{Designed a neuro-symbolic task planning system using LLM-based agents for multi-step decision-making in embodied environments.}
-          \resumeItem{Built LangChain agents with structured tool access, enabling LLMs to reason over and invoke external actions programmatically.}
-          \resumeItem{Abstracted environment capabilities into callable tools, enforcing interpretable, constraint-aware action execution.}
-          \resumeItem{Integrated both cloud-based LLM APIs and local inference via Ollama to evaluate trade-offs between latency, cost, and privacy.}
-          \resumeItem{Validated the agent planning pipeline in Gazebo simulation and deployed it on real hardware via ROS~2 and a Universal Robots (UR) arm.}
+          \resumeItem{Initiated and led a long-term research project focused on strategic planning and decision-making in intelligent systems.}
+          \resumeItem{Defined project milestones, allocated technical responsibilities, and coordinated iterative development cycles.}
+          \resumeItem{Designed interpretable decision frameworks to ensure system transparency, reliability, and stakeholder trust.}
+          \resumeItem{Assessed deployment constraints including cost, scalability, and operational risk to inform implementation strategy.}
         \resumeItemListEnd
 
       \resumeSubheading
-        {Hybrid Vision-Based Sorting System {\normalfont (published in \href{https://ieeexplore.ieee.org/document/10962883}{\underline{ICMCR 2025}})}}{October 2024 -- November 2024}
-        {OpenCV, PyTorch, Scikit-learn, Tkinter, MicroPython}{\href{https://drive.google.com/file/d/1aZ58s-G1_O8lHJCO0lYAOwTa_YPc3Csg/view?usp=sharing}{\underline{Demonstration Video}}}
+        {Vision-Based Sorting System {\normalfont (IEEE ICMCR 2025 Publication)}}{October 2024 -- November 2024}
+        {Cross-Disciplinary Engineering Project}{}
         \resumeItemListStart
-          \resumeItem{Developed a hybrid vision-based classification pipeline combining using machine learning for real-time object recognition.}
-          \resumeItem{Extracted visual features using OpenCV and trained multiple ML models (NN, SVM, KNN, Naive Bayes, Random Forest), achieving up to 98\% accuracy.}
-          \resumeItem{Implemented a spatial mapping model using linear regression to align perception outputs with a projected visual interface.}
-          \resumeItem{Designed an interactive GUI to visualize model predictions and system state in real time.}
-          \resumeItem{Applied the trained models in a robotic sorting setup, demonstrating deployment of ML systems in physical environments.}
-          \resumeItem{Presented the project at the International Conference on Mechatronics, Control and Robotics (ICMCR 2025), showcasing the innovative approach to object sorting using human robot collaboration.}
+          \resumeItem{Led the system design and integration of a vision-based automation solution for real-world industrial use cases.}
+          \resumeItem{Managed model selection and performance evaluation to balance accuracy with operational simplicity.}
+          \resumeItem{Developed a real-time visualization interface to improve usability and human–machine collaboration.}
+          \resumeItem{Presented findings at an international conference, translating complex technical outcomes into clear business and operational value.}
         \resumeItemListEnd
+
     \resumeSubHeadingListEnd
 
-
-
-%
-%-----------PROGRAMMING SKILLS-----------
-\section{Technical Skills}
+%-----------SKILLS-----------
+\section{Core Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Programming Languages}{: Python, Rust, C++, Java, JavaScript, TypeScript} \\
-     \textbf{Frameworks and Libraries}{: Langchain, OpenCV, Pytorch, Tensorflow, ROS~2, React, Svelte, FastAPI} \\
-     \textbf{Developer Tools}{: Git, Github, Docker, Ollama, n8n, Jira, Confluence} \\
-     \textbf{Languages}{: TOEIC: 985/990 (2026), IELTS: 8.5/9.0 (2021), Thai (Native) }
+     \textbf{Leadership \& Management}{: Project ownership, cross-functional collaboration, stakeholder communication, analytical decision-making} \\
+     \textbf{Business \& Technology}{: AI adoption strategy, process optimization, data-driven problem solving} \\
+     \textbf{Tools}{: Python, Docker, Jira, Confluence, Git, FastAPI} \\
+     \textbf{Languages}{: TOEIC: 985/990 (2026), IELTS: 8.5/9.0 (2021), Thai (Native)}
     }}
  \end{itemize}
 
-
-%-------------------------------------------
 \end{document}
